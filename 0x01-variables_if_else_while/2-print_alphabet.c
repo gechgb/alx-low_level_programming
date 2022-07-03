@@ -9,9 +9,9 @@
 int main(void)
 {
 	int cat;
-
+	
 	cat = 97;
-	while (cat<123)
+	while (cat < 123)
 	{
 		putchar(cat);
 		cat++;
