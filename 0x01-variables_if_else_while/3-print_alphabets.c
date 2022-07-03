@@ -8,20 +8,20 @@
  */
 int main(void)
 {
-        int cat;
+	int cat;
 
 	cat = 97;
-        while (cat < 123)
+	while (cat < 123)
 	{
 		putchar(cat);
-	        cat++;
-			        }
+	cat++;
+			}
 		cat = 65;
 	while (cat < 91)
 	{
-	        putchar(cat);
+	putchar(cat);
 		cat++;
 	}
-	        putchar('\n');
+		putchar('\n');
 	return (0);
 }
