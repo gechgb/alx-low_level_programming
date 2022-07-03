@@ -13,15 +13,15 @@ int main(void)
 	cat = 97;
 	while (cat < 123)
 	{
-		putchar(cat);
+	putchar(cat);
 	cat++;
-			}
-		cat = 65;
+	}
+	cat = 65;
 	while (cat < 91)
 	{
 	putchar(cat);
-		cat++;
+	cat++;
 	}
-		putchar('\n');
+	putchar('\n');
 	return (0);
 }
