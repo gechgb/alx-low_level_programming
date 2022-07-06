@@ -1,22 +1,29 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*_islower - Shows 1 if the input is a
-*lowercase character. Another cases, shows
+*_isalpha - Shows 1 if the input is a
+*lowercase and upercase character. Another cases, shows
 *@c: character
 *
-*Return: Always 0 for uper case 1 for lower case  
+*Return: Always 1 for upercase and lowercase 0 if it is not
 */
-int _islower(int c)
+int _isalpha(int c)
 {
-	if (c < 90)
+	int j;
 
+	if (c >= 65 && c <= 90)
 	{
-		return(0);
+		j = 1;
+	}
+	else if (c >= 97 && c <= 122)
+	{
+		j = 1;
 	}
 	else
 	{
-		return(1);
+		j = 0;
 	}
+
+	return (j);
 
 }
