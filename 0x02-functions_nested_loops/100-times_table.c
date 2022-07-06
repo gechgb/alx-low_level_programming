@@ -1,15 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*times_table - computes the absolute value of
+*print_times_table - computes the absolute value of
 *
-*
+*@n: times table
 * Return: Always 1
 */
-void times_table(void)
+void print_times_table(int n)
 {
 	int i, g, j;
 
+	if (n >= 0 && n <= 15)
 	for (i = 0; i <= 9; i++)
 	{
 		_putchar(48);
