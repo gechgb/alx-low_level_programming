@@ -1,15 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* print_last_digit - computes the absolute value of an integer
+* jack_bauer - computes the absolute value of an integer
 * lowercase and upercase character. Another cases, shows
-* @n: character
+*
 *
 * Return: Always 1
 */
 void jack_bauer(void)
 {
-	int i,j;
+
+	int i, j;
 
 	for (i = 0; i < 24; i++)
 	{
