@@ -8,7 +8,7 @@
 int _isupper(int c)
 {
 	char c = A;
-	if (_isupper (c))
+	if (_isupper(c))
 	{
 		return (1);
 	}
