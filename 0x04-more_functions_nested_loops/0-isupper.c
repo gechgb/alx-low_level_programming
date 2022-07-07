@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
 * _isupper: prints 1 if it is uppercase else 0
 * @C: character to chake 
