@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-* _isupper - prints 1 if it is uppercase else 0
-* @c: character to chake
+* _isdigit - prints 1 if it is digit else 0
+* @c: digit to chake
 *
 * Return: return 1
 */
-int _isupper(int c)
+int _isdigit(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c >= '0' && c <= '9')
 	{
 		return (1);
 	}
