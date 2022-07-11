@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* swap_int - swap two int
-* @a: pointer one
-* @b: pointer two
-* Return: Always 0.
+* _strlen - count character
+*
+* @s: accepted character
+* Return: Always a
 */
 int _strlen(char *s)
 {
@@ -11,8 +11,8 @@ int _strlen(char *s)
 
 	a = 0;
 	while (*(a + s))
-			{
-			a++;
-			}
+	{
+		a++;
+	}
 		return (a);
 }
