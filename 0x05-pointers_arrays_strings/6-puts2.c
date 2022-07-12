@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* _puts - puts character
+* puts2 - puts character
 *
 * @str: accepted character
-* Return: Always a
+* Return: Always 0
 */
 void puts2(char *str)
 {
@@ -12,7 +12,6 @@ void puts2(char *str)
 	a = 0;
 	while (*(a + str))
 	{
-		
 		_putchar(*(a + str));
 		a = a + 2;
 	}
