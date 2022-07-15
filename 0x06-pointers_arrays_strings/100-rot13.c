@@ -15,9 +15,9 @@ char *rot13(char *s)
 	{
 	for (b = 0; b < 52; b++)
 	{
-		if (*(s + a) == al[a])
+		if (*(s + a) == al[b])
 		{
-			*(s + a) = en[a];
+			*(s + a) = en[b];
 			break;
 		}
 	}
