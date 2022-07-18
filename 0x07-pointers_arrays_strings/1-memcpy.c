@@ -4,7 +4,7 @@
  *@dest: destination
  *@src: sorce
  *@n: length of memory area to copy
- *Return - pointer of dust
+ *Return: pointer of dust
  **/
 
 char *_memcpy(char *dest, char *src, unsigned int n)
@@ -13,7 +13,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	for (a = 0; a < n; a++)
 	{
-		*(dest + a) = *(src + a);	
+		*(dest + a) = *(src + a);
 	}
 		return (dest);
 }
