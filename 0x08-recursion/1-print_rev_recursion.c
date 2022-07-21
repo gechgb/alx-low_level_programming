@@ -1,17 +1,33 @@
-#include "main.h"
+//#include "main.h"
+#include <stdio.h>
+
 /**
- * _print_rev_recursion - a function that prints a string in reverse.
- * @s: pointer
-**/
-void _print_rev_recursion(char *s)
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    int n;
+
+    n = _strlen_recursion("Corbin Coleman");
+    printf("%d\n", n);
+    return (0);
+}
+
+
+
+
+
+int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		return;
+		return 0;
 	}
 	else
 	{
-		_print_rev_recursion(s + 1);
-		_putchar (*s);
+		 return (1 + _strlen_recursion(s + 1));
+//		_putchar (*s);
 	}
 }
