@@ -8,26 +8,31 @@
  */
 int main(void)
 {
-    int n;
+    int r;
 
-    n = _strlen_recursion("Corbin Coleman");
-    printf("%d\n", n);
+    r = factorial(1);
+    printf("%d\n", r);
+    r = factorial(5);
+    printf("%d\n", r);
+    r = factorial(10);
+    printf("%d\n", r);
+    r = factorial(-1024);
+    printf("%d\n", r);
     return (0);
 }
 
 
-
-
-
-int _strlen_recursion(char *s)
+int factorial(int n)
 {
-	if (*s == '\0')
+	if (n < 0 )
 	{
-		return 0;
+		return -1;
 	}
-	else
-	{
-		 return (1 + _strlen_recursion(s + 1));
-//		_putchar (*s);
+	else if (n <= 1)
+		{
+//		(n * factorial(n));
+		return (1);
 	}
+	
+		return (n * factorial(n - 1));
 }
