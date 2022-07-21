@@ -10,29 +10,36 @@ int main(void)
 {
     int r;
 
-    r = factorial(1);
+    r = _pow_recursion(1, 10);
     printf("%d\n", r);
-    r = factorial(5);
+    r = _pow_recursion(1024, 0);
     printf("%d\n", r);
-    r = factorial(10);
+    r = _pow_recursion(2, 16);
     printf("%d\n", r);
-    r = factorial(-1024);
+    r = _pow_recursion(5, 2);
+    printf("%d\n", r);
+    r = _pow_recursion(5, -2);
+    printf("%d\n", r);
+    r = _pow_recursion(-5, 3);
     printf("%d\n", r);
     return (0);
 }
 
 
-int factorial(int n)
+int _pow_recursion(int x, int y)
 {
-	if (n < 0 )
+	if (y < 0 )
 	{
 		return -1;
 	}
-	else if (n <= 1)
-		{
-//		(n * factorial(n));
-		return (1);
+	else if (y == 1)
+	{
+		return x;
+	}
+	else if (y == 0)
+	{
+		return 1;
 	}
 	
-		return (n * factorial(n - 1));
+		return x * _pow_recursion(x, y - 1);
 }
